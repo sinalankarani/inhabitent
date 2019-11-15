@@ -42,6 +42,7 @@ node_modules/
 plugins/*
 !plugins/inhabitent-functionality/
 !plugins/business-hours-widget/
+
 # Ignore everything in "themes" except the active theme. #
 themes/*
 !themes/inhabitent/

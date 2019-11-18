@@ -1,0 +1,82 @@
+/*--------------------------------------------------------------
+# Journal
+--------------------------------------------------------------*/
+
+.blog {
+
+    .site-header {
+        position: fixed;
+        border-bottom: 1px solid #e1e1e1;
+        background-color: hsla(0,0%,100%,.85);
+        color: $color__text-screen;
+        z-index: 3;
+    }
+
+    .site-content {
+        width: 100%;
+        display: flex;
+        text-align: left;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 50px;
+    }
+
+    .content-area {
+        width: 72%;
+        margin: auto;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        article {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            position: relative;
+
+            .journal-post {
+                line-height: 0;
+            }
+            
+            .journal-title-text {
+                color: #fff;
+                background-color: $color__text-screen;
+                position: absolute;
+                top: 20px;
+                left: 0;
+                line-height: 2;
+                padding: 10px 20px;
+                font-size: 1.6rem;
+            }
+
+            .journal-info {
+                color: #fff;
+                background-color: $color__text-screen;
+                margin: 0;
+                position: absolute;
+                bottom: 1rem;
+                right: 0;
+                padding: 0 10px;
+                font-size: .9rem;
+            }
+        }
+        p {
+            width: 100%;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+        }
+        .journal-text {
+            // max-height: 100px;
+            // text-overflow: ellipsis;
+        }
+    }
+    .widget-area {
+        width: 28%;
+        border-left: 1px solid #e1e1e1;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-left: 3rem;
+    }
+}

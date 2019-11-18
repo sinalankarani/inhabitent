@@ -1,0 +1,123 @@
+/*--------------------------------------------------------------
+# Front Page
+--------------------------------------------------------------*/
+
+.page-front-page {
+
+    .site-main {
+
+        .fp-banner {
+            display: flex;
+        }
+        .full-logo {
+            margin: auto;
+        }
+        h2 {
+            font-family: $header_font;
+            font-size: 2.4rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            color: #2f1339;
+        }
+    }
+    .menu-item a {
+        color: #fff;
+        text-shadow: 1px 1px 2px #323232;
+        
+    }
+    
+    .site-header {
+        position: fixed;
+        border-bottom: none;
+        // .header-logo-green {
+        //     display: none;
+        // }
+    }
+
+
+    .entry-title {
+        display: none;
+    }
+
+    .shop-stuff-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .front-page-journal-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .journal-info-wrapper {
+        height: 180px;
+        padding: 0 10px;
+        margin-top: 0;
+    }
+
+    .front-page-journal-post {
+        flex: 0 1 27%;
+        margin: 1rem;
+        padding: 0;
+        border: 1px solid #e1e1e1;
+        border-radius: 2px;
+        position: relative;
+        .wp-post-image {
+            width: 100%;
+            border-bottom: 5px solid #e1e1e1;
+            border-radius: 2px;
+        }
+        .journal-button-box {
+            border: 1px solid black;
+            border-radius: 2px;
+            width: 150px;
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            &:hover {
+                background-color: $color__text-screen;
+                border: none;
+                .journal-button {
+                    color: #fff;
+                }
+            }
+            .journal-button {
+                color: black;
+                font-size: 1rem;
+                margin: 5px;
+                font-weight: lighter;
+            }
+        }
+    }
+
+    .front-page-journal-info {
+        text-align: left;
+        font-size: .8rem;
+        p {
+            margin: 5px;
+        }
+        h3 {
+            margin: 5px;
+        }
+        a {        
+            color: $color__text-screen;
+            text-transform: uppercase;
+            &:hover {
+                color: darkblue;
+            }
+        }
+        .journal-title {
+            font-size: 1.3rem;
+        }
+    }
+
+    .fp-banner {
+        height: 100vh;
+        width: 100%;
+    }
+}

@@ -1,0 +1,50 @@
+/*--------------------------------------------------------------
+# About Us
+--------------------------------------------------------------*/
+
+.page-about {
+    .site-header {
+        background-color: transparent;
+        display: flex;
+        width: 100%;
+        margin-top: 0;
+        border-bottom: none;
+        a {
+            color: #fff;
+            font-family: $header_font;
+            text-shadow: 1px 1px 2px #323232;
+        }
+    }
+
+    .entry-content {
+        margin-bottom: 3rem;
+    }
+    p {
+        text-align: left;
+        max-width: 800px;
+        margin: auto;
+        font-size: 1.2rem;
+        font-family: 'Merriweather Web';
+    }
+    .about-banner {
+        display: flex;
+        color: #fff;
+        text-shadow: 1px 1px 2px #323232;
+        height: 100vh;
+        width: 100%;
+        h1 {
+            margin: auto;
+            font-size: 3rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+    }
+    h2 {
+        color: #2f1339;
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
+    .entry-title {
+        display: none;
+    }
+}

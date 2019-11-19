@@ -29,38 +29,29 @@ get_header(); ?>
 
          <?php endwhile; // End of the loop. ?>
          
-
-
+         
          <!-- Front Page Shop Links  -->
 
          <h2>Shop Stuff</h2>
 
-         <div class='shop-stuff-container'>
-         <?php 
-               $args = array(
-                  'order' => 'DESC',
-                  'posts_per_page' => 4,
-                  'post_type' => 'product' 
-               );
-               ?>
-            <?php $journal_posts = new WP_Query( $args ); ?>
-
-               <?php if ( $journal_posts->have_posts() ) : ?>
-               <?php while ( $journal_posts->have_posts() ) : $journal_posts->the_post(); ?>
-                  <article class='front-page-journal-post'>
-                     <div><?php the_post_thumbnail([360, 240]); ?></div>
-                     <div class='journal-info-wrapper'>
-                        <div class='front-page-journal-info'><a href="<?php the_permalink()?>"><h3 class="journal-title"><?php the_title(); ?></h3></a></div>
-                        <div class='journal-button-box'><a href="<?php the_permalink()?>"><h3 class="journal-button">Read Entry</h3></a></div>
+         <div class="shop-stuff-container">
+            <?php
+               $terms = get_terms( array(
+                   'taxonomy' => 'product_type',
+                   'hide_empty' => 0,
+               ) );
+               if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
+            ?>
+               <div class="product-type-blocks">
+                  <?php foreach ( $terms as $term ) : ?>
+                     <div class="product-type-block-wrapper">
+                        <div><img src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" /></div>
+                        <div class="product-type-text"><p><?php echo $term->description; ?></p></div>
+                        <div class="btn-box"><p><a href="<?php echo get_term_link( $term ); ?>" class="btn-text"><?php echo $term->name; ?> Stuff</a></p></div>
                      </div>
-                  </article>
-
-               <?php endwhile; ?>
-               <?php the_posts_navigation(); ?>
-               <?php wp_reset_postdata(); ?>
-               <?php else : ?>
-                  <h2>Nothing found!</h2>
-               <?php endif; ?>
+                  <?php endforeach; ?>
+               </div>
+            <?php endif; ?>
          </div>
 
 

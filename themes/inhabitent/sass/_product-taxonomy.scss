@@ -1,22 +1,27 @@
 /*--------------------------------------------------------------
-# Shop Stuff
+# Product Type
 --------------------------------------------------------------*/
 
-.archive {
+.tax-product_type {
 
     .site-header {
         background-color: hsla(0,0%,100%,.85);
         position: fixed;
     }
-    .product-header {
+    .product-type-header {
         height: 120px;
         border-bottom: 1px dotted #e1e1e1;
         line-height: 1rem;
         margin-top: 60px;
         margin-bottom: 0;
         padding-bottom: 0;
+        .page-title {
+            font-size: 2.4rem;
+            font-family: $header_font;
+            padding: 0;
+        }
 
-        .product-type-blocks {
+        .product-blocks {
             display: flex;
             height: 60px;
             width: 30%;
@@ -38,11 +43,7 @@
         }
     }
 
-    .site-main {
-
-        .page-title {
-            padding: 0;
-        }
+    .site-content {
         
         .product-grid {
             display: grid;
@@ -95,4 +96,5 @@
             }
         }        
     }
+
 }

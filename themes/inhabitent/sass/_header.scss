@@ -3,26 +3,51 @@
 --------------------------------------------------------------*/
 
 .site-header {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    width: 100%;
-    position: absolute;
-    background-color: transparent;
-    text-transform: uppercase;
-    font-family: $header_font;
-    border-bottom: 1px solid #e1e1e1;
-    // font-family: 'Novecento Sans Web';
-    // background-color: hsla(0,0%,100%,.85);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-family: $header_font;
+  border-bottom: 1px solid #e1e1e1;
+  // font-family: 'Novecento Sans Web';
+  // background-color: hsla(0,0%,100%,.85);
+  z-index: 3;
 
-    z-index: 3;
+  .search-field {
+    .input {
+      display: none;
+
+      &.active {
+        display: block;
+        transition: all 0.5s 0.8s ease;
+
+      }
+    }
+  }
+
+  .search-form-container {
+    order: 3;
+    margin: 0.7rem;
+    background-color: transparent;
+
+    .icon-search {
+      border: none;
+      color: $color__text-screen;
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 2px #323232;
+    }
+  }
 }
+
 .header-logo-green {
-    justify-content: flex-start;
-    width: 50px;
-    margin-top: 10px;
-    margin-left: 80px;
-    order: 1;
+  justify-content: flex-start;
+  width: 50px;
+  margin-top: 10px;
+  margin-left: 80px;
+  order: 1;
 }
 // .page-front-page {
 //     .site-header {
@@ -32,34 +57,30 @@
 //     }
 // }
 .header-logo-white {
-    justify-content: flex-start;
-    width: 50px;
-    margin-top: 10px;
-    margin-left: 80px;
-    order: 1;
+  justify-content: flex-start;
+  width: 50px;
+  margin-top: 10px;
+  margin-left: 80px;
+  order: 1;
 }
 .menu-toggle {
-	display: none;
+  display: none;
 }
 
-.nav-menu{
-    order: 2;
-	display: flex;
-    flex-direction: row;
-	justify-content: flex-end;
-    width: 100%;
-    margin-left: 8rem;
-	a {
-        color: $color__text-screen;
-        margin: 20px;
-        text-decoration: none;
-		// 	&:hover,
-		// 	&:focus,
-		// 	&:active {
-		// 		color: $color__link-hover;
-	}
-}
-.search-form {
-    order: 3;
-    
+.nav-menu {
+  order: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  margin-left: 8rem;
+  a {
+    color: $color__text-screen;
+    margin: 20px;
+    text-decoration: none;
+    // 	&:hover,
+    // 	&:focus,
+    // 	&:active {
+    // 		color: $color__link-hover;
+  }
 }

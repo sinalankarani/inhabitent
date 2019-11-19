@@ -19,7 +19,10 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
+				<div class="search-result-container">
 				<?php get_template_part( 'template-parts/content', 'search' ); ?>
+				<div class='search-result-btn-box'><a href="<?php the_permalink()?>"><h3 class="search-result-btn">Read Entry</h3></a></div>
+				</div>
 
 			<?php endwhile; ?>
 

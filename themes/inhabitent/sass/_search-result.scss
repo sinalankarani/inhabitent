@@ -1,0 +1,55 @@
+.search-results {
+
+    .site-header {
+        background-color: hsla(0,0%,100%,.85);
+    }
+    .site-content {
+        display: flex;
+        width: 100%;
+        padding-top: 50px;
+        text-align: left;
+
+        .content-area {
+            width: 72%;
+            margin: auto;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+            .search-result-container {
+                margin: 50px 20px;
+            }
+            
+            .search-result-btn-box {
+                border-radius: 2px;
+                width: 120px;
+                background-color: $color__text-screen;
+                h3 {
+                }
+                &:hover {
+                    background-color: rgb(21, 100, 96);
+                    .search-result-btn {
+                        color: #fff;
+                    }
+                }
+                .search-result-btn {
+                    color: #fff;
+                    font-size: 1rem;
+                    font-weight: lighter;
+                    margin: 10px;
+
+                }
+            }
+        }
+        .widget-area {
+            width: 28%;
+            border-left: 1px solid #e1e1e1;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            padding-left: 3rem;
+        }
+        }
+
+        
+    }

@@ -2,7 +2,7 @@
 # Journal
 --------------------------------------------------------------*/
 
-.blog {
+.single-post {
 
     .site-header {
         position: fixed;
@@ -34,52 +34,50 @@
             padding-bottom: 1rem;
             position: relative;
 
-            .journal-post {
-                line-height: 0;
+            .entry-header {
+
+                position: relative;
+                .journal-post {
+                    line-height: 0;
+                }
+                
+                .entry-title {
+                    color: #fff;
+                    background-color: $color__text-screen;
+                    position: absolute;
+                    top: 20px;
+                    left: 0;
+                    line-height: 2;
+                    padding: 10px 20px;
+                    font-size: 1.6rem;
+                }
+                .entry-meta {
+                    color: #fff;
+                    background-color: $color__text-screen;
+                    margin: 0;
+                    position: absolute;
+                    bottom: 9px;
+                    right: 0;
+                    padding: 0 10px;
+                    font-size: 1rem;
+                    a {
+                        color: #fff;
+                    }
+                }
             }
-            
-            .journal-title-text {
-                color: #fff;
-                background-color: $color__text-screen;
-                position: absolute;
-                top: 20px;
-                left: 0;
-                line-height: 2;
-                padding: 10px 20px;
-                font-size: 1.6rem;
-                border-radius: 2px;
+            .entry-footer {
+                .cat-links {
+                    margin-right: 20px;
+                }
             }
 
-            .journal-info {
-                color: #fff;
-                background-color: $color__text-screen;
-                margin: 0;
-                position: absolute;
-                bottom: 1rem;
-                right: 0;
-                padding: 0 10px;
-                font-size: .9rem;
-                border-radius: 5px;
-            }
         }
-
-        .read-more-btn {
-            padding: 10px;
-            color: #fff;
-            background-color: $color__text-screen;
-            border-radius: 5px;
-            &:hover {
-                background-color: rgb(13, 105, 101);
-            }
-        }
-        
         p {
             width: 100%;
         }
         img {
             height: 100%;
             width: 100%;
-            border-radius: 5px;
         }
     }
     .widget-area {

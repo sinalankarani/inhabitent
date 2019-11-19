@@ -29,7 +29,6 @@ get_header(); ?>
 
                   <div class='product-image'><a href="<?php the_permalink()?>"><?php the_post_thumbnail(); ?></a></div>
                   <div class='product-description'><div class="product-title"><?php the_title();  ?></div>&nbsp; <div class="product-price">$<?php the_field('price'); ?>.00</div></div>
-
                   
                   </div>
                <?php endwhile; ?>

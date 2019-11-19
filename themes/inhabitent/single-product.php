@@ -12,13 +12,18 @@ get_header(); ?>
 		
 		<?php while ( have_posts() ) : the_post(); ?>
 		
-		<h2>Price: $<?php the_field('price'); ?>.00</h2>
+		<div class="product-items">
 
-		<?php get_template_part( 'template-parts/content', 'single' ); ?>
+		<div class='product-image'><a href="<?php the_permalink()?>"><?php the_post_thumbnail([500]); ?></a></div>
+		<ul class='product-description'>
+			<li class="product-title"><?php the_title(); ?></li>
+			<li class="product-price">$<?php the_field('price'); ?>.00</li>
+			<li class='product-info'><?php the_content(); ?></li>
+		</ul>
 		
-		<?php the_post_navigation(); ?>
-		
-			
+
+		</div>
+	
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :

@@ -30,13 +30,15 @@ get_header(); ?>
 					<div  class='journal-title-box'><a href="<?php the_permalink()?>">
 					<h1 class='journal-title-text'><?php the_title(); ?></h1></a></div>
 
-					<div class='journal-info'><p><?= get_the_date(); ?> / <?php comments_number(); ?> / By: <?php the_author(); ?></div</p>
+					<div class='journal-info'><p><?= get_the_date(); ?> / <?php comments_number();  ?> / By: <?php the_author(); ?></div</p>
 
 					</div>
 
 				</article>
 
-					<div class='journal-text'><p><?= get_the_content(); ?></p></div>
+					<div class='journal-text'><p><?= wp_trim_words (get_the_content(), 50, ' [...]' )?> </p></div>
+
+					<p class="read-more-text"><a href="<?php the_permalink()?>" class="read-more-btn">Read more →</a></p>
 
 			<?php endwhile; ?>
 			<?php the_posts_navigation(); ?>

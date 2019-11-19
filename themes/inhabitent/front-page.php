@@ -86,7 +86,58 @@ get_header(); ?>
                <?php else : ?>
                   <h2>Nothing found!</h2>
                <?php endif; ?>
+
          </div>
+
+            <section class="adventures">
+               <h2>Latest Adventures</h2>
+               <ul>
+                  <li>
+                     <div class="adventure-container">
+                     <img class="canoe-girl-image" src="<?= get_stylesheet_directory_uri(); ?>/images/adventure-photos/canoe-girl.jpg"/>
+                        <div class="adventure-info">
+                           <h3 class="entry-title"><a href="#">Getting Back to Nature in a Canoe</a></h3>
+                           <a class="read-more-btn" href="#">Read More</a>
+                        </div>
+                     </div>
+                  </li>
+
+                   <li>
+                     <div class="adventure-container">
+                     <img class="beach-bonfire-image" src="<?= get_stylesheet_directory_uri(); ?>/images/adventure-photos/beach-bonfire.jpg"/>
+                        <div class="adventure-info">
+                           <h3 class="entry-title"><a href="#">A Night with Friends at the Beach</a></h3>
+                           <a class="read-more-btn" href="#">Read More</a>
+                        </div>
+                     </div>
+                  </li>
+
+                  <li>
+                     <div class="adventure-container">
+                     <img class="mountain-hikers-image" src="<?= get_stylesheet_directory_uri(); ?>/images/adventure-photos/mountain-hikers.jpg"/>
+                        <div class="adventure-info">
+                           <h3 class="entry-title"><a href="#">Taking in the View at Big Mountain</a></h3>
+                           <a class="read-more-btn" href="#">Read More</a>
+                        </div>
+                     </div>
+                  </li>
+                  
+                  <li>
+                     <div class="adventure-container">
+                     <img class="night-sky-image" src="<?= get_stylesheet_directory_uri(); ?>/images/adventure-photos/night-sky.jpg"/>
+                        <div class="adventure-info">
+                           <h3 class="entry-title"><a href="#">Star-Gazing at the Night Sky</a></h3>
+                           <a class="read-more-btn" href="#">Read More</a>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+
+               <p class="more-adventure">
+                  <a href="" class="more-btn">More Adventures</a>
+               </p>
+
+            </section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

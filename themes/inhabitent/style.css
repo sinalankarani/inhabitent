@@ -858,6 +858,94 @@ body {
   height: 100vh;
   width: 100%; }
 
+.page-front-page .adventures ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 2fr;
+  grid-gap: 20px 20px;
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  width: 100%; }
+
+.page-front-page .adventures li {
+  line-height: 1;
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+  .page-front-page .adventures li::before {
+    content: ' ';
+    display: inline-block;
+    width: 1px;
+    height: 0; }
+  .page-front-page .adventures li:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2; }
+    .page-front-page .adventures li:first-child .adventure-info h3 {
+      font-size: 2.4rem; }
+  .page-front-page .adventures li:nth-child(2) {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 1; }
+    .page-front-page .adventures li:nth-child(2)::before {
+      padding-bottom: calc((100% / 2) - 12px); }
+    .page-front-page .adventures li:nth-child(2) .adventure-info h3 {
+      font-size: 2.4rem; }
+  .page-front-page .adventures li:nth-child(3) .adventure-info h3, .page-front-page .adventures li:last-child .adventure-info h3 {
+    font-size: 2.4rem; }
+
+.page-front-page .adventures .adventure-container {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100; }
+  .page-front-page .adventures .adventure-container:after {
+    background: rgba(0, 0, 0, 0.35);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100; }
+  .page-front-page .adventures .adventure-container img {
+    left: 50%;
+    max-height: 620px;
+    max-width: none;
+    position: absolute;
+    top: 75%;
+    -webkit-transform: translate(-50%, -75%);
+            transform: translate(-50%, -75%);
+    width: auto; }
+
+.page-front-page .adventures .adventure-info {
+  margin: 1.5rem;
+  position: absolute;
+  z-index: 200; }
+  .page-front-page .adventures .adventure-info h3 {
+    font-weight: normal;
+    text-transform: uppercase; }
+
+.page-front-page .adventures .read-more-btn {
+  font-size: 1.4rem;
+  color: whitesmoke;
+  border: 2px solid #fff;
+  text-shadow: 1px 1px 2px gray;
+  padding: 10px; }
+
+.page-front-page .more-adventure .more-btn {
+  background-color: #248a83;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  color: whitesmoke;
+  border: 2px solid #fff;
+  float: left;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  text-transform: uppercase; }
+
 .page-find-us .site-header {
   position: fixed;
   border-bottom: 1px solid #e1e1e1;
@@ -909,7 +997,11 @@ body {
   width: 60%; }
 
 .page-find-us .wpcf7-textarea {
-  width: 90%; }
+  width: 90%;
+  background-color: #e1e1e1; }
+
+.page-find-us .wpcf7-text {
+  background-color: #e1e1e1; }
 
 .page-find-us .wpcf7-submit {
   width: 100px;
@@ -962,7 +1054,8 @@ body {
       left: 0;
       line-height: 2;
       padding: 10px 20px;
-      font-size: 1.6rem; }
+      font-size: 1.6rem;
+      border-radius: 2px; }
     .blog .content-area article .journal-info {
       color: #fff;
       background-color: #248a83;
@@ -971,12 +1064,21 @@ body {
       bottom: 1rem;
       right: 0;
       padding: 0 10px;
-      font-size: .9rem; }
+      font-size: .9rem;
+      border-radius: 5px; }
+  .blog .content-area .read-more-btn {
+    padding: 10px;
+    color: #fff;
+    background-color: #248a83;
+    border-radius: 5px; }
+    .blog .content-area .read-more-btn:hover {
+      background-color: #0d6965; }
   .blog .content-area p {
     width: 100%; }
   .blog .content-area img {
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    border-radius: 5px; }
 
 .blog .widget-area {
   width: 28%;
@@ -1208,6 +1310,69 @@ body {
       margin: 0 10px;
       padding-left: 10px; }
 
+/*--------------------------------------------------------------
+# Product Type
+--------------------------------------------------------------*/
+.single-product .site-header {
+  background-color: rgba(255, 255, 255, 0.85); }
+
+.single-product .product-type-header {
+  height: 120px;
+  border-bottom: 1px dotted #e1e1e1;
+  line-height: 1rem;
+  margin-top: 60px;
+  margin-bottom: 0;
+  padding-bottom: 0; }
+  .single-product .product-type-header .page-title {
+    font-size: 2.4rem;
+    font-family: "Novecento Sans Web" sans-serif;
+    padding: 0; }
+
+.single-product .site-main .product-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 3px;
+  position: relative;
+  font-weight: bold;
+  color: #2f1339;
+  padding-top: 40px; }
+  .single-product .site-main .product-items .product-image {
+    width: 50%;
+    margin-top: 100px; }
+    .single-product .site-main .product-items .product-image img {
+      border-radius: 3px; }
+  .single-product .site-main .product-items .product-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    line-height: 1rem;
+    margin-top: 100px; }
+    .single-product .site-main .product-items .product-description .product-info {
+      line-height: 1.5rem;
+      font-weight: normal; }
+    .single-product .site-main .product-items .product-description .product-title {
+      color: #d99054;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      margin-bottom: 50px;
+      padding-right: 10px;
+      text-transform: uppercase;
+      font-size: 2rem; }
+    .single-product .site-main .product-items .product-description .product-price {
+      font-size: 2rem;
+      padding-bottom: 20px; }
+
 .search-results .site-header {
   background-color: rgba(255, 255, 255, 0.85); }
 
@@ -1246,3 +1411,73 @@ body {
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding-left: 3rem; }
+
+/*--------------------------------------------------------------
+# Journal
+--------------------------------------------------------------*/
+.single-post .site-header {
+  position: fixed;
+  border-bottom: 1px solid #e1e1e1;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #248a83;
+  z-index: 3; }
+
+.single-post .site-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 50px; }
+
+.single-post .content-area {
+  width: 72%;
+  margin: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem; }
+  .single-post .content-area article {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: relative; }
+    .single-post .content-area article .entry-header {
+      position: relative; }
+      .single-post .content-area article .entry-header .journal-post {
+        line-height: 0; }
+      .single-post .content-area article .entry-header .entry-title {
+        color: #fff;
+        background-color: #248a83;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        line-height: 2;
+        padding: 10px 20px;
+        font-size: 1.6rem; }
+      .single-post .content-area article .entry-header .entry-meta {
+        color: #fff;
+        background-color: #248a83;
+        margin: 0;
+        position: absolute;
+        bottom: 9px;
+        right: 0;
+        padding: 0 10px;
+        font-size: 1rem; }
+        .single-post .content-area article .entry-header .entry-meta a {
+          color: #fff; }
+    .single-post .content-area article .entry-footer .cat-links {
+      margin-right: 20px; }
+  .single-post .content-area p {
+    width: 100%; }
+  .single-post .content-area img {
+    height: 100%;
+    width: 100%; }
+
+.single-post .widget-area {
+  width: 28%;
+  border-left: 1px solid #e1e1e1;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem; }

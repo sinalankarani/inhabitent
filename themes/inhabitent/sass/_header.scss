@@ -12,10 +12,19 @@
   text-transform: uppercase;
   font-family: $header_font;
   border-bottom: 1px solid #e1e1e1;
-  // font-family: 'Novecento Sans Web';
-  // background-color: hsla(0,0%,100%,.85);
+  font-family: 'Novecento Sans Web';
   z-index: 3;
 
+  .nav-scrolled {
+    background-color: hsla(0,0%,100%,.85);
+    border-bottom: 1px solid #e1e1e1;
+    position: fixed;
+    transition: top .5s linear;
+    width: 100%;
+    height: 60px;
+    z-index: 3;
+  }
+  
   .search-field {
     .input {
       display: none;
@@ -35,34 +44,46 @@
 
     .icon-search {
       border: none;
-      color: $color__text-screen;
+      color: #fff;
+      // color: $color__text-screen;
       font-size: 1.2rem;
       text-shadow: 1px 1px 2px #323232;
     }
+
+    .icon-search-green {
+      border: none;
+      color: #fff;
+      // color: $color__text-screen;
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 2px #323232;
+    }
+
   }
 }
 
+.header-logo {
+  background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
+  background-size: 50px 33px;
+  height: 33px;
+  justify-content: flex-start;
+  overflow: hidden;
+  text-indent: 100%;
+  margin-top: 10px;
+  margin-left: 80px;
+  order: 1;
+}
 .header-logo-green {
+  background: url("../../images/logos/inhabitent-logo-tent.svg") no-repeat;
+  background-size: 50px 33px;
+  height: 33px;
   justify-content: flex-start;
-  width: 50px;
+  overflow: hidden;
+  text-indent: 100%;
   margin-top: 10px;
   margin-left: 80px;
   order: 1;
 }
-// .page-front-page {
-//     .site-header {
-//     .header-logo-green {
-//         display: none;
-//     }
-//     }
-// }
-.header-logo-white {
-  justify-content: flex-start;
-  width: 50px;
-  margin-top: 10px;
-  margin-left: 80px;
-  order: 1;
-}
+
 .menu-toggle {
   display: none;
 }
@@ -74,13 +95,24 @@
   justify-content: flex-end;
   width: 100%;
   margin-left: 8rem;
+}
+
+.menu-main-menu-container {
   a {
-    color: $color__text-screen;
-    margin: 20px;
+    color: #fff;
+    margin: 0 20px;
     text-decoration: none;
-    // 	&:hover,
-    // 	&:focus,
-    // 	&:active {
-    // 		color: $color__link-hover;
+    	&:hover,
+    	&:focus,
+    	&:active {
+    		color: $color__link-hover;
+  }
+}
+}
+.nav-bar-green {
+  li {
+    a {
+      color: $color__text-screen;
+    }
   }
 }

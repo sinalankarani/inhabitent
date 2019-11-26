@@ -22,14 +22,11 @@
 
 			<header id="masthead" class="site-header" role="banner">
 
-			<a href="<?php echo home_url(); ?>"><img class="header-logo-green" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" />
-			<!-- <a href="<?php echo home_url(); ?>"><img class="header-logo-white" src="<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg" /> -->
-
-			
-			<div class="site-branding">
-				<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-			</div><!-- .site-branding -->
+			<div class="main-logo">
+				<a href="<?php echo home_url(); ?>">
+				<h1 class="header-logo">Inhabitent</h1></a>
+			</div>
+						<!-- src="<?php echo get_stylesheet_directory_uri(); ?>" -->
 			
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>

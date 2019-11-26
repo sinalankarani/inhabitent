@@ -3,72 +3,77 @@
 --------------------------------------------------------------*/
 
 .single-product {
-
-    .site-header {
-        background-color: hsla(0,0%,100%,.85);
+  .site-header {
+    background-color: hsla(0, 0%, 100%, 0.85);
+    position: fixed;
+    a {
+      color: $color__text-screen;
     }
-    .product-type-header {
-        height: 120px;
-        border-bottom: 1px dotted #e1e1e1;
-        line-height: 1rem;
-        margin-top: 60px;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        .page-title {
-            font-size: 2.4rem;
-            font-family: $header_font;
-            padding: 0;
+    .header-logo {
+      background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+      background-size: 50px 33px;
+    }
+    .icon-search {
+      color: $color__text-screen;
+    }
+  }
+  .product-type-header {
+    height: 120px;
+    border-bottom: 1px dotted #e1e1e1;
+    line-height: 1rem;
+    margin-top: 60px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    .page-title {
+      font-size: 2.4rem;
+      font-family: $header_font;
+      padding: 0;
+    }
+  }
+
+  .site-main {
+    .product-items {
+      display: flex;
+      border-radius: 3px;
+      position: relative;
+      font-weight: bold;
+      color: #2f1339;
+      padding-top: 40px;
+
+      .product-image {
+        width: 50%;
+        margin-top: 100px;
+        img {
+          border-radius: 3px;
         }
+      }
 
+      .product-description {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 50%;
+        justify-content: center;
+        line-height: 1rem;
+        margin-top: 100px;
+
+        .product-info {
+          line-height: 1.5rem;
+          font-weight: normal;
+        }
+        .product-title {
+          color: #d99054;
+          justify-content: flex-start;
+          margin-bottom: 50px;
+          padding-right: 10px;
+          text-transform: uppercase;
+          font-size: 2rem;
+        }
+        .product-price {
+          font-size: 2rem;
+          padding-bottom: 20px;
+        }
+      }
     }
-
-    .site-main {
-        
-            .product-items {
-                display: flex;
-                border-radius: 3px;
-                position: relative;
-                font-weight: bold;
-                color: #2f1339;
-                padding-top: 40px;
-                
-                .product-image {
-                    width: 50%;
-                    margin-top: 100px;
-                    img {
-                        border-radius: 3px;
-                    }
-                }
-
-                .product-description {
-                    display: flex;
-                    flex-direction: column;
-                    text-align: left;
-                    width: 50%;
-                    justify-content: center;
-                    line-height: 1rem;
-                    margin-top: 100px;
-
-                    
-                    .product-info {
-                        line-height: 1.5rem;
-                        font-weight: normal;
-                    }
-                    .product-title {
-                        color: #d99054;
-                        justify-content: flex-start;
-                        margin-bottom: 50px;
-                        padding-right: 10px;
-                        text-transform: uppercase;
-                        font-size: 2rem;
-                    }
-                    .product-price {
-                        font-size: 2rem;
-                        padding-bottom: 20px;
-                    }
-                }
-            }
-           
-    }
-
+  }
 }

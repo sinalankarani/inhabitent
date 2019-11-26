@@ -3,48 +3,48 @@
 --------------------------------------------------------------*/
 
 .page-about {
-    .site-header {
-        background-color: transparent;
-        display: flex;
-        width: 100%;
-        margin-top: 0;
-        border-bottom: none;
-        a {
-            color: #fff;
-            font-family: $header_font;
-            text-shadow: 1px 1px 2px #323232;
-        }
-    }
+  .site-header {
+    border-bottom: none;
+  }
+  .nav-scrolled {
+    background-color: hsla(0, 0%, 100%, 0.85);
+    border-bottom: 1px solid #e1e1e1;
+    padding: 0.5rem 0;
+    position: fixed;
+    transition: top 0.5s linear;
+    width: 100%;
+    z-index: 3;
+  }
 
-    .entry-content {
-        margin-bottom: 3rem;
+  .entry-content {
+    margin-bottom: 3rem;
+  }
+  p {
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.2rem;
+    font-family: 'Merriweather Web', serif;
+  }
+  .banner {
+    display: flex;
+    color: #fff;
+    text-shadow: 1px 1px 2px #323232;
+    height: 100vh;
+    width: 100%;
+    h1 {
+      margin: auto;
+      font-size: 3rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
     }
-    p {
-        text-align: left;
-        max-width: 800px;
-        margin: auto;
-        font-size: 1.2rem;
-        font-family: 'Merriweather Web';
-    }
-    .about-banner {
-        display: flex;
-        color: #fff;
-        text-shadow: 1px 1px 2px #323232;
-        height: 100vh;
-        width: 100%;
-        h1 {
-            margin: auto;
-            font-size: 3rem;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-        }
-    }
-    h2 {
-        color: #2f1339;
-        font-size: 2rem;
-        letter-spacing: 3px;
-    }
-    .entry-title {
-        display: none;
-    }
+  }
+  h2 {
+    color: #2f1339;
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
+  .entry-title {
+    display: none;
+  }
 }

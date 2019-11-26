@@ -160,9 +160,9 @@ select {
   text-transform: none; }
 
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   -webkit-appearance: button;
   cursor: pointer; }
 
@@ -178,18 +178,18 @@ input::-moz-focus-inner {
 input {
   line-height: normal; }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0; }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   height: auto; }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 legend {
@@ -214,29 +214,29 @@ optgroup {
 */
 @font-face {
   font-family: 'Merriweather Web';
-  src: url("./fonts/Merriweather/fonts/merriweather-light-webfont.eot");
-  src: url("./fonts/Merriweather/fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/Merriweather/fonts/merriweather-light-webfont.woff2") format("woff2"), url("./fonts/Merriweather/fonts/merriweather-light-webfont.woff") format("woff"), url("./fonts/Merriweather/fonts/merriweather-light-webfont.ttf") format("truetype"), url("./fonts/Merriweather/fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
+  src: url("../../fonts/Merriweather/fonts/merriweather-light-webfont.eot");
+  src: url("../../fonts/Merriweather/fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather/fonts/merriweather-light-webfont.woff2") format("woff2"), url("../../fonts/Merriweather/fonts/merriweather-light-webfont.woff") format("woff"), url("../../fonts/Merriweather/fonts/merriweather-light-webfont.ttf") format("truetype"), url("../../fonts/Merriweather/fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather Web';
-  src: url("./fonts/Merriweather/fonts/merriweather-lightitalic-webfont.eot");
-  src: url("./fonts/Merriweather/fonts/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/Merriweather/fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("./fonts/Merriweather/fonts/merriweather-lightitalic-webfont.woff") format("woff"), url("./fonts/Merriweather/fonts/merriweather-lightitalic-webfont.ttf") format("truetype"), url("./fonts/Merriweather/fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
+  src: url("../../fonts/Merriweather/fonts/merriweather-lightitalic-webfont.eot");
+  src: url("../../fonts/Merriweather/fonts/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather/fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("../../fonts/Merriweather/fonts/merriweather-lightitalic-webfont.woff") format("woff"), url("../../fonts/Merriweather/fonts/merriweather-lightitalic-webfont.ttf") format("truetype"), url("../../fonts/Merriweather/fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
   font-weight: normal;
   font-style: italic; }
 
 @font-face {
   font-family: 'Merriweather Web';
-  src: url("./fonts/Merriweather/fonts/merriweather-bold-webfont.eot");
-  src: url("./fonts/Merriweather/fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/Merriweather/fonts/merriweather-bold-webfont.woff2") format("woff2"), url("./fonts/Merriweather/fonts/merriweather-bold-webfont.woff") format("woff"), url("./fonts/Merriweather/fonts/merriweather-bold-webfont.ttf") format("truetype"), url("./fonts/Merriweather/fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
+  src: url("../../fonts/Merriweather/fonts/merriweather-bold-webfont.eot");
+  src: url("../../fonts/Merriweather/fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather/fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../../fonts/Merriweather/fonts/merriweather-bold-webfont.woff") format("woff"), url("../../fonts/Merriweather/fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../../fonts/Merriweather/fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather Web';
-  src: url("./fonts/Merriweather/fonts/merriweather-bolditalic-webfont.eot");
-  src: url("./fonts/Merriweather/fonts/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/Merriweather/fonts/merriweather-bolditalic-webfont.woff2") format("woff2"), url("./fonts/Merriweather/fonts/merriweather-bolditalic-webfont.woff") format("woff"), url("./fonts/Merriweather/fonts/merriweather-bolditalic-webfont.ttf") format("truetype"), url("./fonts/Merriweather/fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
+  src: url("../../fonts/Merriweather/fonts/merriweather-bolditalic-webfont.eot");
+  src: url("../../fonts/Merriweather/fonts/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather/fonts/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/Merriweather/fonts/merriweather-bolditalic-webfont.woff") format("woff"), url("../../fonts/Merriweather/fonts/merriweather-bolditalic-webfont.ttf") format("truetype"), url("../../fonts/Merriweather/fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
   font-weight: bold;
   font-style: italic; }
 
@@ -249,15 +249,15 @@ optgroup {
 */
 @font-face {
   font-family: 'Novecento Sans Web';
-  src: url("./fonts/Novecento/fonts/novecentosanswide-normal-webfont.eot");
-  src: url("./fonts/Novecento/fonts/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/Novecento/fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("./fonts/Novecento/fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("./fonts/Novecento/fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("./fonts/Novecento/fonts/novecentosanswide-normal-webfont.svg#novecento_sans_widenormal") format("svg");
+  src: url("../../fonts/Novecento/fonts/novecentosanswide-normal-webfont.eot");
+  src: url("../../fonts/Novecento/fonts/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novecento/fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../fonts/Novecento/fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../../fonts/Novecento/fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../../fonts/Novecento/fonts/novecentosanswide-normal-webfont.svg#novecento_sans_widenormal") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Novecento Sans Web';
-  src: url("./fonts/Novecento/fonts/novecentosanswide-demibold-webfont.eot");
-  src: url("./fonts/Novecento/fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/Novecento/fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("./fonts/Novecento/fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("./fonts/Novecento/fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("./fonts/Novecento/fonts/novecentosanswide-demibold-webfont.svg#novecento_sans_widedemibold") format("svg");
+  src: url("../../fonts/Novecento/fonts/novecentosanswide-demibold-webfont.eot");
+  src: url("../../fonts/Novecento/fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novecento/fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../fonts/Novecento/fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../../fonts/Novecento/fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../../fonts/Novecento/fonts/novecentosanswide-demibold-webfont.svg#novecento_sans_widedemibold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
@@ -270,14 +270,14 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: "Merriweather Web" serif;
+  font-family: "Merriweather Web", serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Novecento Sans Web" sans-serif;
+  font-family: "Novecento Sans Web", sans-serif;
   text-transform: uppercase;
   clear: both; }
 
@@ -287,7 +287,7 @@ h1 {
 
 /* Copy */
 p {
-  font-family: "Merriweather Web" serif;
+  font-family: "Merriweather Web", serif;
   font-size: 1.2rem; }
 
 dfn, cite, em, i {
@@ -301,7 +301,7 @@ address {
 
 pre {
   background: #eee;
-  font-family: "Merriweather Web" serif;
+  font-family: "Merriweather Web", serif;
   font-size: 16px;
   font-size: 1rem;
   font-size: 15px;
@@ -313,7 +313,7 @@ pre {
   padding: 1.6rem; }
 
 code, kbd, tt, var {
-  font-family: "Merriweather Web" serif;
+  font-family: "Merriweather Web", serif;
   font-size: 15px;
   font-size: 0.9375rem; }
 
@@ -374,51 +374,51 @@ a {
 --------------------------------------------------------------*/
 /* Buttons */
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   background: #e6e6e6;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6rem 1rem .4rem; }
+  padding: 0.6rem 1rem 0.4rem; }
   button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
+  input[type='button']:hover,
+  input[type='reset']:hover,
+  input[type='submit']:hover {
     border-color: #ccc #bbb #aaa; }
   button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
+  input[type='button']:active,
+  input[type='button']:focus,
+  input[type='reset']:active,
+  input[type='reset']:focus,
+  input[type='submit']:active,
+  input[type='submit']:focus {
     -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
             box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
 
 /* Fields */
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
 textarea {
   color: #666;
   border-radius: 3px; }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="url"]:focus,
-  input[type="password"]:focus,
-  input[type="search"]:focus,
+  input[type='text']:focus,
+  input[type='email']:focus,
+  input[type='url']:focus,
+  input[type='password']:focus,
+  input[type='search']:focus,
   textarea:focus {
     color: #111; }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'] {
   padding: 3px; }
 
 textarea {
@@ -457,29 +457,11 @@ textarea {
     /* Above WP toolbar. */ }
 
 /*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5rem; }
-
-.alignright {
-  display: inline;
-  margin-left: 1.5rem; }
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-/*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
 .clearfix {
   clear: both;
-  content: "";
+  content: '';
   display: table; }
 
 /*--------------------------------------------------------------
@@ -498,7 +480,6 @@ textarea {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-/* Posts and pages */
 .updated:not(.published) {
   display: none; }
 
@@ -545,7 +526,7 @@ object {
 .wp-caption {
   margin-bottom: 1.5rem;
   max-width: 100%; }
-  .wp-caption img[class*="wp-image-"] {
+  .wp-caption img[class*='wp-image-'] {
     display: block;
     margin-left: auto;
     margin-right: auto; }
@@ -625,7 +606,7 @@ body {
       .site-footer .footer-logo-container .footer-logo .footer-logo-img {
         max-width: 50%; }
   .site-footer .copyright-info {
-    font-family: 'Novecento Sans Web' sans-serif;
+    font-family: 'Novecento Sans Web', sans-serif;
     margin-left: auto;
     margin-right: auto;
     text-transform: uppercase;
@@ -636,7 +617,7 @@ body {
         -ms-flex-align: end;
             align-items: flex-end; }
   .site-footer .footer-title {
-    font-family: 'Novecento Sans Web' sans-serif;
+    font-family: 'Novecento Sans Web', sans-serif;
     color: #d99054;
     text-transform: uppercase; }
 
@@ -656,41 +637,55 @@ body {
   position: absolute;
   background-color: transparent;
   text-transform: uppercase;
-  font-family: "Novecento Sans Web" sans-serif;
+  font-family: "Novecento Sans Web", sans-serif;
   border-bottom: 1px solid #e1e1e1;
-  font-family: 'Novecento Sans Web';
+  font-family: 'Novecento Sans Web', sans-serif;
   z-index: 3; }
   .site-header .nav-scrolled {
     background-color: rgba(255, 255, 255, 0.85);
-    border-bottom: 1px solid #e1e1e1;
     position: fixed;
-    -webkit-transition: top .5s linear;
-    transition: top .5s linear;
-    width: 100%;
+    -webkit-transition: top 0.5s linear;
+    transition: top 0.5s linear;
     height: 60px;
     z-index: 3; }
-  .site-header .search-field .input {
-    display: none; }
-    .site-header .search-field .input.active {
-      display: block;
-      -webkit-transition: all 0.5s 0.8s ease;
-      transition: all 0.5s 0.8s ease; }
   .site-header .search-form-container {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
-    margin: 0.7rem;
-    background-color: transparent; }
+    margin: 0.8rem;
+    background-color: transparent;
+    margin-left: 2rem; }
+    .site-header .search-form-container .search-form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -webkit-transition: all 0.6s ease;
+      transition: all 0.6s ease; }
+      .site-header .search-form-container .search-form .search-field {
+        -webkit-transition: all 0.6s ease;
+        transition: all 0.6s ease; }
+        .site-header .search-form-container .search-form .search-field .input {
+          display: none;
+          background-color: rgba(204, 204, 204, 0.65);
+          border: none;
+          border-radius: 10px;
+          -webkit-transition: all 0.6s ease;
+          transition: all 0.6s ease; }
+          .site-header .search-form-container .search-form .search-field .input.active {
+            display: block;
+            -webkit-transition: all 0.5s 0.8s ease;
+            transition: all 0.5s 0.8s ease;
+            color: #323232;
+            font-size: 1.2rem; }
     .site-header .search-form-container .icon-search {
       border: none;
       color: #fff;
       font-size: 1.2rem;
       text-shadow: 1px 1px 2px #323232; }
     .site-header .search-form-container .icon-search-green {
-      border: none;
-      color: #fff;
-      font-size: 1.2rem;
-      text-shadow: 1px 1px 2px #323232; }
+      color: #248a83; }
 
 .header-logo {
   background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
@@ -740,7 +735,7 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 100%;
-  margin-left: 8rem; }
+  margin-left: 5rem; }
 
 .menu-main-menu-container a {
   color: #fff;
@@ -761,17 +756,17 @@ body {
 .page-front-page .nav-scrolled {
   background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #e1e1e1;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   position: fixed;
-  -webkit-transition: top .5s linear;
-  transition: top .5s linear;
+  -webkit-transition: top 0.5s linear;
+  transition: top 0.5s linear;
   width: 100%;
   z-index: 3; }
 
 .page-front-page .entry-title {
   display: none; }
 
-.page-front-page .site-main .fp-banner {
+.page-front-page .site-main .banner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -780,7 +775,7 @@ body {
   margin: auto; }
 
 .page-front-page .site-main h2 {
-  font-family: "Novecento Sans Web" sans-serif;
+  font-family: "Novecento Sans Web", sans-serif;
   font-size: 2.4rem;
   font-weight: 400;
   letter-spacing: 2px;
@@ -806,7 +801,7 @@ body {
       border: 1px solid #e1e1e1;
       border-top: 5px solid #e1e1e1;
       border-radius: 2px;
-      font-family: "Novecento Sans Web" sans-serif; }
+      font-family: "Novecento Sans Web", sans-serif; }
       .page-front-page .site-main .shop-stuff-container .product-type-blocks .product-type-block-wrapper:hover {
         border: 1px solid #f17726;
         border-top: 5px solid #f17726; }
@@ -839,7 +834,16 @@ body {
   margin-right: auto; }
 
 .page-front-page .site-main .journal-info-wrapper {
-  height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0 10px;
   margin-top: 0; }
 
@@ -860,9 +864,7 @@ body {
     border: 1px solid black;
     border-radius: 2px;
     width: 150px;
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem; }
+    margin-bottom: 10px; }
     .page-front-page .site-main .front-page-journal-post .journal-button-box:hover {
       background-color: #248a83;
       border: none; }
@@ -871,7 +873,7 @@ body {
     .page-front-page .site-main .front-page-journal-post .journal-button-box .journal-button {
       color: black;
       font-size: 1rem;
-      margin: 5px;
+      margin: 2px;
       font-weight: lighter; }
 
 .page-front-page .site-main .front-page-journal-info {
@@ -889,7 +891,7 @@ body {
   .page-front-page .site-main .front-page-journal-info .journal-title {
     font-size: 1.3rem; }
 
-.page-front-page .site-main .fp-banner {
+.page-front-page .site-main .banner {
   height: 100vh;
   width: 100%; }
 
@@ -997,10 +999,15 @@ body {
       background-color: #057070; }
 
 .page-find-us .site-header {
-  position: fixed;
-  border-bottom: 1px solid #e1e1e1;
   background-color: rgba(255, 255, 255, 0.85);
-  z-index: 3; }
+  position: fixed; }
+  .page-find-us .site-header a {
+    color: #248a83; }
+  .page-find-us .site-header .header-logo {
+    background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+    background-size: 50px 33px; }
+  .page-find-us .site-header .icon-search {
+    color: #248a83; }
 
 .page-find-us .site-content {
   width: 100%;
@@ -1018,7 +1025,7 @@ body {
   padding-left: 5rem; }
   .page-find-us .content-area h2 {
     color: #2f1339;
-    font-family: "Novecento Sans Web" sans-serif;
+    font-family: "Novecento Sans Web", sans-serif;
     font-size: 2rem; }
   .page-find-us .content-area p {
     width: 90%;
@@ -1067,11 +1074,15 @@ body {
 # Journal
 --------------------------------------------------------------*/
 .blog .site-header {
-  position: fixed;
-  border-bottom: 1px solid #e1e1e1;
   background-color: rgba(255, 255, 255, 0.85);
-  color: #248a83;
-  z-index: 3; }
+  position: fixed; }
+  .blog .site-header a {
+    color: #248a83; }
+  .blog .site-header .header-logo {
+    background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+    background-size: 50px 33px; }
+  .blog .site-header .icon-search {
+    color: #248a83; }
 
 .blog .site-content {
   width: 100%;
@@ -1114,7 +1125,7 @@ body {
       bottom: 1rem;
       right: 0;
       padding: 0 10px;
-      font-size: .9rem;
+      font-size: 0.9rem;
       border-radius: 5px; }
   .blog .content-area .read-more-btn {
     padding: 10px;
@@ -1141,17 +1152,17 @@ body {
 # About Us
 --------------------------------------------------------------*/
 .page-about .site-header {
-  background-color: transparent;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin-top: 0;
   border-bottom: none; }
-  .page-about .site-header a {
-    color: #fff;
-    font-family: "Novecento Sans Web" sans-serif;
-    text-shadow: 1px 1px 2px #323232; }
+
+.page-about .nav-scrolled {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid #e1e1e1;
+  padding: 0.5rem 0;
+  position: fixed;
+  -webkit-transition: top 0.5s linear;
+  transition: top 0.5s linear;
+  width: 100%;
+  z-index: 3; }
 
 .page-about .entry-content {
   margin-bottom: 3rem; }
@@ -1161,9 +1172,9 @@ body {
   max-width: 800px;
   margin: auto;
   font-size: 1.2rem;
-  font-family: 'Merriweather Web'; }
+  font-family: 'Merriweather Web', serif; }
 
-.page-about .about-banner {
+.page-about .banner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1171,7 +1182,7 @@ body {
   text-shadow: 1px 1px 2px #323232;
   height: 100vh;
   width: 100%; }
-  .page-about .about-banner h1 {
+  .page-about .banner h1 {
     margin: auto;
     font-size: 3rem;
     letter-spacing: 3px;
@@ -1191,6 +1202,13 @@ body {
 .archive .site-header {
   background-color: rgba(255, 255, 255, 0.85);
   position: fixed; }
+  .archive .site-header a {
+    color: #248a83; }
+  .archive .site-header .header-logo {
+    background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+    background-size: 50px 33px; }
+  .archive .site-header .icon-search {
+    color: #248a83; }
 
 .archive .product-header {
   height: 120px;
@@ -1217,7 +1235,7 @@ body {
         justify-content: space-around;
     text-transform: uppercase;
     color: #248a83;
-    font-family: "Novecento Sans Web" sans-serif; }
+    font-family: "Novecento Sans Web", sans-serif; }
     .archive .product-header .product-type-blocks:hover {
       color: darkblue; }
     .archive .product-header .product-type-blocks ul {
@@ -1238,8 +1256,8 @@ body {
     font-weight: bold;
     color: #2f1339; }
     .archive .site-main .product-grid .product-items:hover {
-      -webkit-transition: .2s ease-in-out;
-      transition: .2s ease-in-out;
+      -webkit-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out;
       -webkit-box-shadow: inset 20px 0 80px rgba(255, 255, 255, 0.85), inset -20px 0 80px #a5a8a8, inset 20px 0 200px rgba(255, 255, 255, 0.85), inset -20px 0 200px #a5a8a8, 10px 10px 40px 20px rgba(255, 255, 255, 0.85);
               box-shadow: inset 20px 0 80px rgba(255, 255, 255, 0.85), inset -20px 0 80px #a5a8a8, inset 20px 0 200px rgba(255, 255, 255, 0.85), inset -20px 0 200px #a5a8a8, 10px 10px 40px 20px rgba(255, 255, 255, 0.85);
       background-size: 105%;
@@ -1288,7 +1306,7 @@ body {
   padding-bottom: 0; }
   .tax-product_type .product-type-header .page-title {
     font-size: 2.4rem;
-    font-family: "Novecento Sans Web" sans-serif;
+    font-family: "Novecento Sans Web", sans-serif;
     padding: 0; }
   .tax-product_type .product-type-header .product-blocks {
     display: -webkit-box;
@@ -1308,7 +1326,7 @@ body {
         justify-content: space-around;
     text-transform: uppercase;
     color: #248a83;
-    font-family: "Novecento Sans Web" sans-serif; }
+    font-family: "Novecento Sans Web", sans-serif; }
     .tax-product_type .product-type-header .product-blocks:hover {
       color: darkblue; }
     .tax-product_type .product-type-header .product-blocks ul {
@@ -1326,8 +1344,8 @@ body {
     font-weight: bold;
     color: #2f1339; }
     .tax-product_type .site-content .product-grid .product-items:hover {
-      -webkit-transition: .2s ease-in-out;
-      transition: .2s ease-in-out;
+      -webkit-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out;
       -webkit-box-shadow: inset 20px 0 80px rgba(255, 255, 255, 0.85), inset -20px 0 80px #a5a8a8, inset 20px 0 200px rgba(255, 255, 255, 0.85), inset -20px 0 200px #a5a8a8, 10px 10px 40px 20px rgba(255, 255, 255, 0.85);
               box-shadow: inset 20px 0 80px rgba(255, 255, 255, 0.85), inset -20px 0 80px #a5a8a8, inset 20px 0 200px rgba(255, 255, 255, 0.85), inset -20px 0 200px #a5a8a8, 10px 10px 40px 20px rgba(255, 255, 255, 0.85);
       background-size: 105%;
@@ -1364,7 +1382,15 @@ body {
 # Product Type
 --------------------------------------------------------------*/
 .single-product .site-header {
-  background-color: rgba(255, 255, 255, 0.85); }
+  background-color: rgba(255, 255, 255, 0.85);
+  position: fixed; }
+  .single-product .site-header a {
+    color: #248a83; }
+  .single-product .site-header .header-logo {
+    background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+    background-size: 50px 33px; }
+  .single-product .site-header .icon-search {
+    color: #248a83; }
 
 .single-product .product-type-header {
   height: 120px;
@@ -1375,7 +1401,7 @@ body {
   padding-bottom: 0; }
   .single-product .product-type-header .page-title {
     font-size: 2.4rem;
-    font-family: "Novecento Sans Web" sans-serif;
+    font-family: "Novecento Sans Web", sans-serif;
     padding: 0; }
 
 .single-product .site-main .product-items {
@@ -1466,11 +1492,15 @@ body {
 # Journal
 --------------------------------------------------------------*/
 .single-post .site-header {
-  position: fixed;
-  border-bottom: 1px solid #e1e1e1;
   background-color: rgba(255, 255, 255, 0.85);
-  color: #248a83;
-  z-index: 3; }
+  position: fixed; }
+  .single-post .site-header a {
+    color: #248a83; }
+  .single-post .site-header .header-logo {
+    background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+    background-size: 50px 33px; }
+  .single-post .site-header .icon-search {
+    color: #248a83; }
 
 .single-post .site-content {
   width: 100%;

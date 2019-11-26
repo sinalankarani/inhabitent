@@ -3,88 +3,92 @@
 --------------------------------------------------------------*/
 
 .single-post {
-
-    .site-header {
-        position: fixed;
-        border-bottom: 1px solid #e1e1e1;
-        background-color: hsla(0,0%,100%,.85);
-        color: $color__text-screen;
-        z-index: 3;
+  .site-header {
+    background-color: hsla(0, 0%, 100%, 0.85);
+    position: fixed;
+    a {
+      color: $color__text-screen;
     }
-
-    .site-content {
-        width: 100%;
-        display: flex;
-        text-align: left;
-        margin-right: auto;
-        margin-left: auto;
-        padding-top: 50px;
+    .header-logo {
+      background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+      background-size: 50px 33px;
     }
+    .icon-search {
+      color: $color__text-screen;
+    }
+  }
 
-    .content-area {
-        width: 72%;
-        margin: auto;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
+  .site-content {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 50px;
+  }
 
-        article {
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            position: relative;
+  .content-area {
+    width: 72%;
+    margin: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
-            .entry-header {
+    article {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      position: relative;
 
-                position: relative;
-                .journal-post {
-                    line-height: 0;
-                }
-                
-                .entry-title {
-                    color: #fff;
-                    background-color: $color__text-screen;
-                    position: absolute;
-                    top: 20px;
-                    left: 0;
-                    line-height: 2;
-                    padding: 10px 20px;
-                    font-size: 1.6rem;
-                }
-                .entry-meta {
-                    color: #fff;
-                    background-color: $color__text-screen;
-                    margin: 0;
-                    position: absolute;
-                    bottom: 9px;
-                    right: 0;
-                    padding: 0 10px;
-                    font-size: 1rem;
-                    a {
-                        color: #fff;
-                    }
-                }
-            }
-            .entry-footer {
-                .cat-links {
-                    margin-right: 20px;
-                }
-            }
-
+      .entry-header {
+        position: relative;
+        .journal-post {
+          line-height: 0;
         }
-        p {
-            width: 100%;
+
+        .entry-title {
+          color: #fff;
+          background-color: $color__text-screen;
+          position: absolute;
+          top: 20px;
+          left: 0;
+          line-height: 2;
+          padding: 10px 20px;
+          font-size: 1.6rem;
         }
-        img {
-            height: 100%;
-            width: 100%;
+        .entry-meta {
+          color: #fff;
+          background-color: $color__text-screen;
+          margin: 0;
+          position: absolute;
+          bottom: 9px;
+          right: 0;
+          padding: 0 10px;
+          font-size: 1rem;
+          a {
+            color: #fff;
+          }
         }
+      }
+      .entry-footer {
+        .cat-links {
+          margin-right: 20px;
+        }
+      }
     }
-    .widget-area {
-        width: 28%;
-        border-left: 1px solid #e1e1e1;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        padding-left: 3rem;
+    p {
+      width: 100%;
     }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .widget-area {
+    width: 28%;
+    border-left: 1px solid #e1e1e1;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+  }
 }

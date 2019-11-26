@@ -14,7 +14,7 @@ get_header(); ?>
       <?php
 				if ( has_post_thumbnail() ) { ?>
 
-         <header class="fp-banner" style="background: linear-gradient(180deg,rgba(0,0,0,.4),rgba(0,0,0,.4)), url(<?php echo get_the_post_thumbnail_url(); ?>); background-size: cover;" >
+         <header class="banner" style="background: linear-gradient(180deg,rgba(0,0,0,.4),rgba(0,0,0,.4)), url(<?php echo get_the_post_thumbnail_url(); ?>); background-size: cover;" >
          
          <img class="full-logo" src="<?= get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-full.svg"/>
          

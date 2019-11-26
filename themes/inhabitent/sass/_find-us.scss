@@ -1,81 +1,88 @@
 // FIND US
 
 .page-find-us {
-    .site-header {
-        position: fixed;
-        border-bottom: 1px solid #e1e1e1;
-        background-color: hsla(0,0%,100%,.85);
-        z-index: 3;
+  .site-header {
+    background-color: hsla(0, 0%, 100%, 0.85);
+    position: fixed;
+    a {
+      color: $color__text-screen;
     }
+    .header-logo {
+      background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+      background-size: 50px 33px;
+    }
+    .icon-search {
+      color: $color__text-screen;
+    }
+  }
 
-    .site-content {
-        width: 100%;
-        display: flex;
-        margin-right: auto;
-        margin-left: auto;
-        padding-top: 50px;
-        text-align: left;
-    }
-        
-    .content-area {
-        width: 72%;
-        padding: 2rem 0;
-        padding-left: 5rem;
-        h2 {
-            color: #2f1339;
-            font-family: $header_font;
-            font-size: 2rem;
-        }
-        p {
-            width: 90%;
-            font-size: 1.2rem;
-            color: #404040;
-        }
-    }
-    
-    .widget-area {
-        width: 28%;
-        border-left: 1px solid #e1e1e1;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        padding-left: 3rem;
-        h2 {
-            color: #2f1339;
-        }
-        p {
-            color: #404040;
-        }
-    }    
-    
-    figure {
-        margin: 0;
-        iframe {
-            width: 90%;
-            height: 450px;
-            border-radius: 2px;
-        }
-    }
-    .wpcf7-text {
-        width: 60%;
+  .site-content {
+    width: 100%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 50px;
+    text-align: left;
+  }
 
+  .content-area {
+    width: 72%;
+    padding: 2rem 0;
+    padding-left: 5rem;
+    h2 {
+      color: #2f1339;
+      font-family: $header_font;
+      font-size: 2rem;
     }
-    .wpcf7-textarea {
-        width: 90%;
-        background-color: #e1e1e1;
+    p {
+      width: 90%;
+      font-size: 1.2rem;
+      color: #404040;
     }
-    .wpcf7-text {
-        background-color: #e1e1e1;
-    }
+  }
 
-    .wpcf7-submit {
-            width: 100px;
-            color: black;
-            background-color: #fff;
-            font-size: 1.2rem;
-            border-radius: 2px;
-            &:hover {
-                background-color: $color__text-screen;
-                color: #fff;
-            }
+  .widget-area {
+    width: 28%;
+    border-left: 1px solid #e1e1e1;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    h2 {
+      color: #2f1339;
     }
+    p {
+      color: #404040;
+    }
+  }
+
+  figure {
+    margin: 0;
+    iframe {
+      width: 90%;
+      height: 450px;
+      border-radius: 2px;
+    }
+  }
+  .wpcf7-text {
+    width: 60%;
+  }
+  .wpcf7-textarea {
+    width: 90%;
+    background-color: #e1e1e1;
+  }
+  .wpcf7-text {
+    background-color: #e1e1e1;
+  }
+
+  .wpcf7-submit {
+    width: 100px;
+    color: black;
+    background-color: #fff;
+    font-size: 1.2rem;
+    border-radius: 2px;
+    &:hover {
+      background-color: $color__text-screen;
+      color: #fff;
+    }
+  }
 }

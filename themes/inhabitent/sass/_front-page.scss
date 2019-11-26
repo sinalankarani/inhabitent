@@ -3,20 +3,15 @@
 --------------------------------------------------------------*/
 
 .page-front-page {
-  .menu-item a {
-    // color: #fff;
-    // text-shadow: 1px 1px 2px #323232;
-  }
-
   .site-header {
     border-bottom: none;
   }
   .nav-scrolled {
-    background-color: hsla(0,0%,100%,.85);
+    background-color: hsla(0, 0%, 100%, 0.85);
     border-bottom: 1px solid #e1e1e1;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
     position: fixed;
-    transition: top .5s linear;
+    transition: top 0.5s linear;
     width: 100%;
     z-index: 3;
   }
@@ -26,7 +21,7 @@
   }
 
   .site-main {
-    .fp-banner {
+    .banner {
       display: flex;
     }
     .full-logo {
@@ -94,7 +89,9 @@
       margin-right: auto;
     }
     .journal-info-wrapper {
-      height: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       padding: 0 10px;
       margin-top: 0;
     }
@@ -115,9 +112,7 @@
         border: 1px solid black;
         border-radius: 2px;
         width: 150px;
-        position: absolute;
-        bottom: 1rem;
-        left: 1rem;
+        margin-bottom: 10px;
         &:hover {
           background-color: $color__text-screen;
           border: none;
@@ -128,7 +123,7 @@
         .journal-button {
           color: black;
           font-size: 1rem;
-          margin: 5px;
+          margin: 2px;
           font-weight: lighter;
         }
       }
@@ -155,7 +150,7 @@
       }
     }
 
-    .fp-banner {
+    .banner {
       height: 100vh;
       width: 100%;
     }
@@ -266,7 +261,7 @@
         a {
           color: #fff;
           &:hover {
-            color: rgb(247, 237, 218)
+            color: rgb(247, 237, 218);
           }
         }
 

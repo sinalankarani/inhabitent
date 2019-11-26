@@ -12,57 +12,63 @@
   text-transform: uppercase;
   font-family: $header_font;
   border-bottom: 1px solid #e1e1e1;
-  font-family: 'Novecento Sans Web';
+  font-family: 'Novecento Sans Web', sans-serif;
   z-index: 3;
 
   .nav-scrolled {
-    background-color: hsla(0,0%,100%,.85);
-    border-bottom: 1px solid #e1e1e1;
+    background-color: hsla(0, 0%, 100%, 0.85);
     position: fixed;
-    transition: top .5s linear;
-    width: 100%;
+    transition: top 0.5s linear;
     height: 60px;
     z-index: 3;
-  }
-  
-  .search-field {
-    .input {
-      display: none;
-
-      &.active {
-        display: block;
-        transition: all 0.5s 0.8s ease;
-
-      }
-    }
   }
 
   .search-form-container {
     order: 3;
-    margin: 0.7rem;
+    margin: 0.8rem;
     background-color: transparent;
+    margin-left: 2rem;
+
+    .search-form {
+      display: flex;
+      flex-wrap: nowrap;
+      transition: all 0.6s ease;
+
+      .search-field {
+        transition: all 0.6s ease;
+
+        .input {
+          display: none;
+          background-color: hsla(0, 0%, 80%, 0.65);
+          border: none;
+          border-radius: 10px;
+          transition: all 0.6s ease;
+
+          &.active {
+            display: block;
+            transition: all 0.5s 0.8s ease;
+            color: #323232;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
 
     .icon-search {
       border: none;
       color: #fff;
-      // color: $color__text-screen;
       font-size: 1.2rem;
       text-shadow: 1px 1px 2px #323232;
     }
 
     .icon-search-green {
-      border: none;
-      color: #fff;
-      // color: $color__text-screen;
-      font-size: 1.2rem;
-      text-shadow: 1px 1px 2px #323232;
+      color: $color__text-screen;
     }
-
   }
 }
 
 .header-logo {
-  background: url("../../images/logos/inhabitent-logo-tent-white.svg") no-repeat;
+  background: url('../../images/logos/inhabitent-logo-tent-white.svg') no-repeat;
   background-size: 50px 33px;
   height: 33px;
   justify-content: flex-start;
@@ -73,7 +79,7 @@
   order: 1;
 }
 .header-logo-green {
-  background: url("../../images/logos/inhabitent-logo-tent.svg") no-repeat;
+  background: url('../../images/logos/inhabitent-logo-tent.svg') no-repeat;
   background-size: 50px 33px;
   height: 33px;
   justify-content: flex-start;
@@ -94,7 +100,7 @@
   flex-direction: row;
   justify-content: flex-end;
   width: 100%;
-  margin-left: 8rem;
+  margin-left: 5rem;
 }
 
 .menu-main-menu-container {
@@ -102,12 +108,12 @@
     color: #fff;
     margin: 0 20px;
     text-decoration: none;
-    	&:hover,
-    	&:focus,
-    	&:active {
-    		color: $color__link-hover;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color__link-hover;
+    }
   }
-}
 }
 .nav-bar-green {
   li {

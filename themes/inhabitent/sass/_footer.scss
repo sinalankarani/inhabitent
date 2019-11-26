@@ -1,62 +1,61 @@
 /* Footer */
 
 .site-footer {
-	min-width: 100%;
-	height: 340px;
-	color: #fff;
-	font-size: 1.2rem;
-	overflow: hidden;
+  min-width: 100%;
+  height: 340px;
+  color: #fff;
+  font-size: 1.2rem;
+  overflow: hidden;
 
-	li {
-		line-height: 1.75;
-	}
-	
-	a {
-		color: #fff;
-		&:hover {
-			color: chocolate;
-		}
-	}
+  li {
+    line-height: 1.75;
+  }
 
-	
-	.contact-socialmedia-logo {
-		display: flex;
-		text-align: left;
-		margin: 40px 0;
-		line-height: 1.5;
-		
-		.contact-footer {
-			li:last-child i {
-				margin-top: 10px;
-				margin-right: 15px;
-			}
-		}
-	}
+  a {
+    color: #fff;
+    &:hover {
+      color: chocolate;
+    }
+  }
 
-	.footer-logo-container {
-		width: 45%;
+  .contact-socialmedia-logo {
+    display: flex;
+    text-align: left;
+    margin: 40px 0;
+    line-height: 1.5;
 
-		.footer-logo {
-			text-align: right;
-			margin-top: 8%;			
+    .contact-footer {
+      li:last-child i {
+        margin-top: 10px;
+        margin-right: 15px;
+      }
+    }
+  }
 
-			.footer-logo-img {
-				max-width: 50%;
-			}
-		}		
-	}
+  .footer-logo-container {
+    width: 45%;
 
-	.copyright-info {
-		font-family: 'Novecento Sans Web' sans-serif;
-		margin-left: auto;
-		margin-right: auto;
-		text-transform: uppercase;
-		justify-content: center;
-		align-items: flex-end;
-	}
-	.footer-title {
-		font-family: 'Novecento Sans Web' sans-serif;
-		color: #d99054;
-		text-transform: uppercase;
-	}
+    .footer-logo {
+      text-align: right;
+      margin-top: 8%;
+
+      .footer-logo-img {
+        max-width: 50%;
+      }
+    }
+  }
+
+  .copyright-info {
+    font-family: 'Novecento Sans Web', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .footer-title {
+    font-family: 'Novecento Sans Web', sans-serif;
+    color: #d99054;
+    text-transform: uppercase;
+  }
 }

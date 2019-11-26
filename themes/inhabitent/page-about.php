@@ -13,7 +13,7 @@ get_header(); ?>
 			<?php
 				if ( has_post_thumbnail() ) { ?>
 
-			<header class="about-banner" style="background: linear-gradient(180deg,rgba(0,0,0,.4),rgba(0,0,0,.4)), url(<?php echo get_the_post_thumbnail_url(); ?>);  background-size: cover;">
+			<header class="banner" style="background: linear-gradient(180deg,rgba(0,0,0,.4),rgba(0,0,0,.4)), url(<?php echo get_the_post_thumbnail_url(); ?>);  background-size: cover;">
 
 			<h1><?php the_title() ?></h1>
 		

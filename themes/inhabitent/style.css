@@ -288,7 +288,8 @@ h1 {
 /* Copy */
 p {
   font-family: "Merriweather Web", serif;
-  font-size: 1.2rem; }
+  font-size: 1rem;
+  line-height: 1.75rem; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -574,6 +575,57 @@ body {
   min-width: 100%;
   text-align: center;
   line-height: 1.75; }
+
+/*--------------------------------------------------------------
+# 404 Page
+--------------------------------------------------------------*/
+.error404 .site-header {
+  background-color: rgba(255, 255, 255, 0.85);
+  position: fixed; }
+  .error404 .site-header a {
+    color: #248a83; }
+  .error404 .site-header .header-logo {
+    background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+    background-size: 50px 33px; }
+  .error404 .site-header .icon-search {
+    color: #248a83; }
+
+.error404 .site-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 50px;
+  text-align: left; }
+
+.error404 .content-area {
+  width: 72%;
+  padding: 2rem 0;
+  padding-left: 5rem; }
+  .error404 .content-area a {
+    text-decoration: none;
+    color: #248a83; }
+  .error404 .content-area h2 {
+    color: #2f1339;
+    font-family: "Novecento Sans Web", sans-serif;
+    font-size: 2rem; }
+  .error404 .content-area p {
+    width: 90%;
+    font-size: 1.2rem;
+    color: #404040; }
+
+.error404 .widget-area {
+  width: 28%;
+  border-left: 1px solid #e1e1e1;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem; }
+  .error404 .widget-area h2 {
+    color: #2f1339; }
+  .error404 .widget-area p {
+    color: #404040; }
 
 /* Footer */
 .site-footer {
@@ -1117,6 +1169,10 @@ body {
       padding: 10px 20px;
       font-size: 1.6rem;
       border-radius: 2px; }
+    .blog .content-area article .journal-text p {
+      font-size: 1.4rem;
+      line-height: 1.5rem;
+      width: 100%; }
     .blog .content-area article .journal-info {
       color: #fff;
       background-color: #248a83;
@@ -1127,6 +1183,9 @@ body {
       padding: 0 10px;
       font-size: 0.9rem;
       border-radius: 5px; }
+      .blog .content-area article .journal-info p {
+        font-size: .9rem;
+        width: 100%; }
   .blog .content-area .read-more-btn {
     padding: 10px;
     color: #fff;
@@ -1134,8 +1193,6 @@ body {
     border-radius: 5px; }
     .blog .content-area .read-more-btn:hover {
       background-color: #0d6965; }
-  .blog .content-area p {
-    width: 100%; }
   .blog .content-area img {
     height: 100%;
     width: 100%;
@@ -1449,39 +1506,58 @@ body {
       font-size: 2rem;
       padding-bottom: 20px; }
 
-.search-results .site-header {
-  background-color: rgba(255, 255, 255, 0.85); }
+.search .site-header {
+  background-color: rgba(255, 255, 255, 0.85);
+  position: fixed; }
+  .search .site-header a {
+    color: #248a83; }
+  .search .site-header .header-logo {
+    background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+    background-size: 50px 33px; }
+  .search .site-header .icon-search {
+    color: #248a83; }
 
-.search-results .site-content {
+.search .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding-top: 50px;
   text-align: left; }
-  .search-results .site-content .content-area {
+  .search .site-content .content-area {
     width: 72%;
     margin: auto;
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding-left: 2rem;
     padding-right: 2rem; }
-    .search-results .site-content .content-area .search-result-container {
+    .search .site-content .content-area a {
+      text-decoration: none;
+      color: #248a83; }
+    .search .site-content .content-area h2 {
+      color: #2f1339;
+      font-family: "Novecento Sans Web", sans-serif;
+      font-size: 2rem; }
+    .search .site-content .content-area p {
+      width: 90%;
+      font-size: 1.2rem;
+      color: #404040; }
+    .search .site-content .content-area .search-result-container {
       margin: 50px 20px; }
-    .search-results .site-content .content-area .search-result-btn-box {
+    .search .site-content .content-area .search-result-btn-box {
       border-radius: 2px;
       width: 120px;
       background-color: #248a83; }
-      .search-results .site-content .content-area .search-result-btn-box:hover {
+      .search .site-content .content-area .search-result-btn-box:hover {
         background-color: #156460; }
-        .search-results .site-content .content-area .search-result-btn-box:hover .search-result-btn {
+        .search .site-content .content-area .search-result-btn-box:hover .search-result-btn {
           color: #fff; }
-      .search-results .site-content .content-area .search-result-btn-box .search-result-btn {
+      .search .site-content .content-area .search-result-btn-box .search-result-btn {
         color: #fff;
         font-size: 1rem;
         font-weight: lighter;
         margin: 10px; }
-  .search-results .site-content .widget-area {
+  .search .site-content .widget-area {
     width: 28%;
     border-left: 1px solid #e1e1e1;
     padding-top: 3rem;

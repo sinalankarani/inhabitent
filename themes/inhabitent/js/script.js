@@ -1,5 +1,5 @@
 (function($) {
-  $(document).ready(function() {
+  $(function() {
     $('.site-header .icon-search').click(function(event) {
       event.preventDefault();
 

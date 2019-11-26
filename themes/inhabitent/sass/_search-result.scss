@@ -1,6 +1,17 @@
-.search-results {
+.search {
   .site-header {
     background-color: hsla(0, 0%, 100%, 0.85);
+    position: fixed;
+    a {
+      color: $color__text-screen;
+    }
+    .header-logo {
+      background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+      background-size: 50px 33px;
+    }
+    .icon-search {
+      color: $color__text-screen;
+    }
   }
   .site-content {
     display: flex;
@@ -16,6 +27,22 @@
       padding-left: 2rem;
       padding-right: 2rem;
 
+      a {
+        text-decoration: none;
+        color: $color__text-screen;
+      }
+
+      h2 {
+        color: #2f1339;
+        font-family: $header_font;
+        font-size: 2rem;
+      }
+      p {
+        width: 90%;
+        font-size: 1.2rem;
+        color: #404040;
+      }
+
       .search-result-container {
         margin: 50px 20px;
       }
@@ -24,7 +51,9 @@
         border-radius: 2px;
         width: 120px;
         background-color: $color__text-screen;
+
         h3 {
+
         }
         &:hover {
           background-color: rgb(21, 100, 96);

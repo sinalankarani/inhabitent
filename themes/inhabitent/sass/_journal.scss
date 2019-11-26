@@ -56,6 +56,13 @@
         border-radius: 2px;
       }
 
+      .journal-text {
+        p {
+          font-size: 1.4rem;
+          line-height: 1.5rem;
+          width: 100%;
+        }
+      }
       .journal-info {
         color: #fff;
         background-color: $color__text-screen;
@@ -66,6 +73,11 @@
         padding: 0 10px;
         font-size: 0.9rem;
         border-radius: 5px;
+
+        p {
+          font-size: .9rem;
+          width: 100%;
+        }
       }
     }
 
@@ -79,9 +91,6 @@
       }
     }
 
-    p {
-      width: 100%;
-    }
     img {
       height: 100%;
       width: 100%;

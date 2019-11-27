@@ -21,7 +21,6 @@ Ten Biz Hours (Custom Widget for Inhabitent Business Hours Functionality)
 
 Wordpress Theme Template hierarchy
 
-
 <h3>Menu</h3>
 
 [Home] front-page.php  - [Shop] archive.php - [Journal] home.php - [About] page-about.php - [Find Us] page-find-us.php
@@ -36,17 +35,16 @@ archive-product.php
 
 * Custom Loops
 
-3 Types of custom loops are used :
-get_terms( $query ) - is used in front-page.php to display SHOP STUFF and used in archive-product.php to display categories
+2 Types of custom loops are used :
 
-get_posts( $query ) - is used in front-page.php to display INHABITENT JOURNAL, LATEST ADVENTURES
+new WP_Query ( $query ) - is used in archive-product.php to display products and used in front-page.php to display INHABITENT JOURNAL.
 
-new WP_Query( $query ) - is used in archive-product.php to display products
+get_terms ( $query ) - is used in archive-product.php to display products and used in front-page.php to display SHOP Categories.
  
 <img src="screenshots/shop-page.png" width=600px>
 
-2. Theme Plugins
+Stretch Goal:
 
-Business hours widget
+JavaScript (Intersection Observer) is used to alter the style of the header to be absolutely positioned with a reverse colour scheme on pages with hero images at the top, and transition to the standard site header once the user has scrolled past the hero image to the rest of the page content.
 
-Create custom widgets in the sidebar for contact info and business hours to change information easily.
+![web-gif-sd](https://user-images.githubusercontent.com/55861803/69760622-db572f00-1119-11ea-977c-f08e54367ce0.gif)

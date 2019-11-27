@@ -14,13 +14,12 @@ get_header(); ?>
 		
 		<div class="product-items">
 
-		<div class='product-image'><a href="<?php the_permalink()?>"><?php the_post_thumbnail([500]); ?></a></div>
+		<div class='product-image'><a href="<?php the_permalink()?>"><?php the_post_thumbnail(); ?></a></div>
 		<ul class='product-description'>
 			<li class="product-title"><?php the_title(); ?></li>
 			<li class="product-price">$<?php the_field('price'); ?>.00</li>
 			<li class='product-info'><?php the_content(); ?></li>
 		</ul>
-		
 
 		</div>
 	

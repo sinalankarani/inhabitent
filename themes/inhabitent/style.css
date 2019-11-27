@@ -288,8 +288,7 @@ h1 {
 /* Copy */
 p {
   font-family: "Merriweather Web", serif;
-  font-size: 1rem;
-  line-height: 1.75rem; }
+  font-size: 1rem; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -625,6 +624,108 @@ body {
   .error404 .widget-area h2 {
     color: #2f1339; }
   .error404 .widget-area p {
+    color: #404040; }
+
+/*--------------------------------------------------------------
+# Post Category Page
+--------------------------------------------------------------*/
+.category .site-header {
+  background-color: rgba(255, 255, 255, 0.85);
+  position: fixed; }
+  .category .site-header a {
+    color: #248a83; }
+  .category .site-header .header-logo {
+    background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+    background-size: 50px 33px; }
+  .category .site-header .icon-search {
+    color: #248a83; }
+
+.category .site-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 50px;
+  text-align: left; }
+
+.category .content-area {
+  width: 72%;
+  padding: 2rem 0;
+  padding-left: 5rem; }
+  .category .content-area a {
+    text-decoration: none;
+    color: #248a83; }
+  .category .content-area h2 {
+    color: #2f1339;
+    font-family: "Novecento Sans Web", sans-serif;
+    font-size: 2rem; }
+  .category .content-area p {
+    width: 90%;
+    font-size: 1.2rem;
+    color: #404040; }
+
+.category .widget-area {
+  width: 28%;
+  border-left: 1px solid #e1e1e1;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem; }
+  .category .widget-area h2 {
+    color: #2f1339; }
+  .category .widget-area p {
+    color: #404040; }
+
+/*--------------------------------------------------------------
+# Tags
+--------------------------------------------------------------*/
+.tag .site-header {
+  background-color: rgba(255, 255, 255, 0.85);
+  position: fixed; }
+  .tag .site-header a {
+    color: #248a83; }
+  .tag .site-header .header-logo {
+    background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+    background-size: 50px 33px; }
+  .tag .site-header .icon-search {
+    color: #248a83; }
+
+.tag .site-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 50px;
+  text-align: left; }
+
+.tag .content-area {
+  width: 72%;
+  padding: 2rem 0;
+  padding-left: 5rem; }
+  .tag .content-area a {
+    text-decoration: none;
+    color: #248a83; }
+  .tag .content-area h2 {
+    color: #2f1339;
+    font-family: "Novecento Sans Web", sans-serif;
+    font-size: 2rem; }
+  .tag .content-area p {
+    width: 90%;
+    font-size: 1.2rem;
+    color: #404040; }
+
+.tag .widget-area {
+  width: 28%;
+  border-left: 1px solid #e1e1e1;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem; }
+  .tag .widget-area h2 {
+    color: #2f1339; }
+  .tag .widget-area p {
     color: #404040; }
 
 /* Footer */
@@ -1259,8 +1360,6 @@ body {
 .archive .site-header {
   background-color: rgba(255, 255, 255, 0.85);
   position: fixed; }
-  .archive .site-header a {
-    color: #248a83; }
   .archive .site-header .header-logo {
     background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
     background-size: 50px 33px; }
@@ -1271,7 +1370,7 @@ body {
   height: 120px;
   border-bottom: 1px dotted #e1e1e1;
   line-height: 1rem;
-  margin-top: 60px;
+  margin-top: 80px;
   margin-bottom: 0;
   padding-bottom: 0; }
   .archive .product-header .product-type-blocks {
@@ -1293,8 +1392,11 @@ body {
     text-transform: uppercase;
     color: #248a83;
     font-family: "Novecento Sans Web", sans-serif; }
-    .archive .product-header .product-type-blocks:hover {
-      color: darkblue; }
+    .archive .product-header .product-type-blocks a {
+      color: #248a83;
+      font-size: 1.3rem; }
+      .archive .product-header .product-type-blocks a:hover {
+        color: #03473e; }
     .archive .product-header .product-type-blocks ul {
       list-style: none; }
 
@@ -1353,6 +1455,13 @@ body {
 .tax-product_type .site-header {
   background-color: rgba(255, 255, 255, 0.85);
   position: fixed; }
+  .tax-product_type .site-header .header-logo {
+    background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+    background-size: 50px 33px; }
+  .tax-product_type .site-header .icon-search {
+    color: #248a83; }
+  .tax-product_type .site-header .main-navigation li a {
+    color: #248a83; }
 
 .tax-product_type .product-type-header {
   height: 120px;
@@ -1488,8 +1597,9 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    line-height: 1rem;
-    margin-top: 100px; }
+    line-height: 1.5rem;
+    margin-top: 100px;
+    padding-right: 2rem; }
     .single-product .site-main .product-items .product-description .product-info {
       line-height: 1.5rem;
       font-weight: normal; }

@@ -6,9 +6,7 @@
   .site-header {
     background-color: hsla(0, 0%, 100%, 0.85);
     position: fixed;
-    a {
-      color: $color__text-screen;
-    }
+    
     .header-logo {
       background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
       background-size: 50px 33px;
@@ -21,7 +19,7 @@
     height: 120px;
     border-bottom: 1px dotted #e1e1e1;
     line-height: 1rem;
-    margin-top: 60px;
+    margin-top: 80px;
     margin-bottom: 0;
     padding-bottom: 0;
 
@@ -38,8 +36,12 @@
       text-transform: uppercase;
       color: $color__text-screen;
       font-family: $header_font;
-      &:hover {
-        color: darkblue;
+      a {
+        color: $color__text-screen;
+        font-size: 1.3rem;
+        &:hover {
+          color: rgb(3, 71, 62);
+        }
       }
       ul {
         list-style: none;

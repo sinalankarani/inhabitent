@@ -6,6 +6,21 @@
   .site-header {
     background-color: hsla(0, 0%, 100%, 0.85);
     position: fixed;
+    
+    .header-logo {
+      background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+      background-size: 50px 33px;
+    }
+    .icon-search {
+      color: $color__text-screen;
+    }
+    .main-navigation {
+      li {
+        a {
+          color: $color__text-screen;
+        }
+      }
+    }
   }
   .product-type-header {
     height: 120px;

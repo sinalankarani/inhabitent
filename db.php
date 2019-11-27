@@ -1,1 +1,0 @@
-/Users/sinalankarani/Desktop/WebDev/MAMP Projects/inhabitent/wp-content/plugins/query-monitor/wp-content/db.php

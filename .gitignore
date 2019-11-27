@@ -39,6 +39,7 @@ node_modules/
 !themes/
 !uploads/
 !README.md
+!screenshots/
 # Ignore everything in "plugins" except certain plugins. #
 plugins/*
 !plugins/inhabitent-functionality-plugin/

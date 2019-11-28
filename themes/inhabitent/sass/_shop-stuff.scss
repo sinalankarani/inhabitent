@@ -6,7 +6,9 @@
   .site-header {
     background-color: hsla(0, 0%, 100%, 0.85);
     position: fixed;
-    
+    a {
+      color: $color__text-screen;
+    }
     .header-logo {
       background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
       background-size: 50px 33px;

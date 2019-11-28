@@ -1360,6 +1360,8 @@ body {
 .archive .site-header {
   background-color: rgba(255, 255, 255, 0.85);
   position: fixed; }
+  .archive .site-header a {
+    color: #248a83; }
   .archive .site-header .header-logo {
     background: url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
     background-size: 50px 33px; }
